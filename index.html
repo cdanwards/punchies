@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regular Show Fight!</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <audio id="theme-song" autoplay loop>
+    <source src="sounds/titlescreen.mp3" type="audio/mpeg">
+  </audio>
+
+
+<div class="character-screen"></div>
+<div class="fight-screen"></div>
+<div class="game-over-screen"></div>
+
+<div class="start-screen-container">
+
+  <img class="start-screen-logo" src="images/logo.png" alt="Regular Show">
+  <span class="fight">FIGHT!</span>
+  <button class="start">START</button>
+
+</div>
+
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="scripts/characters.js"></script>
+<script src="scripts/main.js"></script>
+
+
+<script type="text/template" class="character-select">
+
+<h1 class= "title">Choose Your Fighter!</h1>
+
+  <div class="character-select-screen-container">
+
+    <ul class="characterbox">
+      <li class="mordecai">
+        <span>Mordecai</span>
+      </li>
+      <li class="rigby">
+        <span>Rigby</span>
+      </li>
+      <li class="benson">
+        <span>Benson</span>
+      </li>
+      <li class="pops">
+        <span>Pops</span>
+      </li>
+      <li class="skips">
+        <span>Skips</span>
+      </li>
+      <li class="muscleman">
+        <span>Muscleman</span>
+      </li>
+    </ul>
+
+    <div class="player-box-container">
+      <div id="selected-character"></div>
+    </div>
+
+    <button id="fight-button">FIGHT</button>
+
+  </div>
+</script>
+
+
+<script type="text/template" class="fight-screen-container">
+
+  <h1 class= "title">Let's do this!</h1>
+
+  <div class="health-bars">
+    <progress id='character-health' max="100" value="100"></progress>
+    <span class="health">HEALTH</span>
+    <progress id='opponent-health' max="100" value="100"></progress>
+  </div>
+
+  <div class="fight-box-container">
+    <div class="selected-character-fight"></div>
+      <span class="vs-character-select">VS</span>
+      <div id="opponent-fight"></div>
+  </div>
+  <div class="punchies-button-container">
+    <button class="punchies-button">GIVE THEM PUNCHIES</button>
+  </div>
+
+</script>
+
+<script type="text/template" class="game-over-screen-container">
+
+  <div class="game-over-container">
+    <h2 class="game-over">GAME OVER</h2>
+    <h2 class="you-win game-over-status">YOU WIN PUNCHIES!</h2>
+    <h2 class="you-lose game-over-status">YOU'RE NOT SO GREAT AT PUNCHIES</h2>
+  </div>
+  <button class="reset-button">RESET</button>
+
+</script>
+
+
+
+</body>
+</html>

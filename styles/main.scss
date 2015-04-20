@@ -1,0 +1,467 @@
+body {
+  background-image: url('../images/background.png');
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.start-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 730px;
+
+
+  .fight {
+    font-size: 60px;
+    margin-top: -80px;
+    margin-bottom: 90px;
+    margin-right: -95px;
+    align-self: flex-end;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .start {
+    margin-top: 80px;
+    color: #B46F9B;
+    padding: .5em 1.75em;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid rgba(147, 128, 108, .25);
+    background-color: #6E0047;
+
+    &:hover {
+      color: #fff;
+      background-color: #964175;
+    }
+  }
+}
+
+
+.start-screen-logo {
+  display: block;
+  flex: 1;
+  margin-left: -50px;
+}
+
+.title {
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+}
+
+.characterbox li {
+  list-style: none;
+
+  span {
+    color: white;
+  }
+}
+
+.characterbox {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  li {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    min-height: 180px;
+    margin: 10px;
+    border: 2px solid white;
+  }
+}
+
+.mordecai {
+  padding: 5px;
+  background-image: url('../images/mordecai.png');
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    padding-top: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.mordecai-background {
+  background-image: url('../images/mordecai.png');
+  background-size: cover;
+}
+
+.rigby {
+  padding: 5px;
+  background-image: url('../images/rigby.png');
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.rigby-background {
+  background: url('../images/rigby.png') no-repeat center;
+}
+
+.benson {
+  padding: 5px;
+  background-image: url('../images/benson.png');
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.benson-background {
+  background-image: url('../images/benson.png');
+  background-size: cover;
+}
+
+.pops {
+  padding: 5px;
+  background: url('../images/pops.png') no-repeat center;
+  background-size: cover;
+  background-position: 25% 41%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.pops-background {
+  background: url('../images/pops.png') no-repeat center;
+}
+
+.skips {
+  padding: 5px;
+  background-image: url('../images/skips.png');
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.skips-background {
+  background-image: url('../images/skips.png');
+  background-size: cover;
+}
+
+.muscleman {
+  padding: 5px;
+  background: url('../images/muscleman.png') no-repeat center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(180, 111, 155, .45);
+  }
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+
+}
+
+.muscleman-background {
+  background: url('../images/muscleman.png') no-repeat center;
+}
+
+.player-box-container {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+/*   align-items: center;
+justify-content: center */;
+  margin: 0 auto;
+  width: 900px;
+}
+
+#selected-character {
+  display: inline-block;
+  margin: 10px auto 25px;
+  position: relative;
+  padding: 5px;
+  align-self: flex-start;
+  background-color: rgba(2, 189, 5, 0.35);
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  border: 2px solid white;
+}
+
+.vs-character-select {
+  margin: 39px 29px 0 45px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 80px;
+}
+
+.opponent-character {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 38px;
+  padding: 5px;
+  align-self: flex-end;
+  background-color: rgba(196, 0, 0, 0.35);
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  border: 2px solid white;
+}
+
+#fight-button {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  color: #B46F9B;
+  padding: .5em 1.75em;
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+  border: 1px solid rgba(147, 128, 108, .25);
+  background-color: #6E0047;
+
+  &:hover {
+    color: #fff;
+    background-color: #964175;
+  }
+}
+
+.health-bars {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#character-health {
+  align-self: flex-start;
+}
+
+.health {
+  width: 234px;
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+}
+
+#opponent-health {
+  align-self: flex-end;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 313px;
+  height: 56px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #3d212f;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+     -webkit-linear-gradient(top,
+                             rgba(255, 255, 255, .25),
+                             rgba(0, 0, 0, .25)),
+     -webkit-linear-gradient(left, #ce3e08, #f9b72a);
+
+  border-radius: 2px;
+  background-size: 45px 60px, 100% 100%, 100% 100%;
+}
+
+.fight-box-container {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.selected-character-fight {
+  display: inline-block;
+  padding: 5px;
+  align-self: flex-start;
+  background-color: rgba(2, 189, 5, 0.35);
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  border: 2px solid white;
+}
+
+#opponent-fight {
+  display: inline-block;
+  padding: 5px;
+  align-self: flex-end;
+  background-color: rgba(196, 0, 0, 0.35);
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  border: 2px solid white;
+}
+
+.summer-time {
+  background-image: url('../images/summertime.png');
+  background-size: cover;
+}
+
+.death {
+  background: url('../images/death.png') no-repeat center;
+}
+
+.garrett {
+  background: url('../images/garrettbobbyferguson.png') no-repeat center;
+}
+
+.iacedrom-and-ybgir {
+  background-image: url('../images/iacedromandybgir.png');
+  background-size: cover;
+}
+
+.thomas {
+  background-image: url('../images/thomas.png');
+  background-size: cover;
+}
+
+.tmpc {
+  background: url('../images/tmpc.png') no-repeat center;
+}
+
+.punchies-button-container {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.punchies-button {
+  margin-top: 30px;
+  color: #b46f9b;
+  padding: .5em 1.75em;
+  font-size: 40px;
+  align-self: flex-start;
+  font-family: 'Press Start 2P', cursive;
+  border: 1px solid rgba(147, 128, 108, .25);
+  background-color: #6e0047;
+
+  &:hover {
+    color: #fff;
+    background-color: #964175;
+  }
+}
+
+
+.hidden {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+}
+
+
+.game-over-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 780px;
+}
+
+.game-over {
+  margin-top: 100px;
+  background-color: red;
+  padding: 9px 10px 0 21px;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 80px;
+}
+
+.game-over-status {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  color: #b46f9b;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+}
+
+.reset-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid rgba(147, 128, 108, .25);
+  background-color: #6e0047;
+  padding: .5em 1.75em;
+  color: #b46f9b;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+
+  &:hover {
+    background-color: #964175;
+    color: #fff;
+  }
+}
